@@ -1,7 +1,7 @@
 //存放小蛇每个身体部分
 let elements = [];
 
-export default class Snake {
+class Snake {
     constructor(width, heigth, direction) {
         this.width = width || 20;
         this.height = heigth || 20;
@@ -78,3 +78,7 @@ function remove() {
         elements.splice(i, 1);
     }
 }
+
+
+
+export {Snake};

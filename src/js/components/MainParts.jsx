@@ -10,13 +10,13 @@ class MainParts extends React.Component{
                 <h1>About部分</h1>
             </div>
             <div id="Contact" className={cssObj.Contact}>
-                <button id="easy">简单难度</button>
-                <button id="common">普通难度</button>
-                <button id="hard">炼狱难度</button>
+                <button id="easy" className="btn btn-inverse">简单难度</button>
+                <button id="common" className="btn btn-inverse">普通难度</button>
+                <button id="hard" className="btn btn-inverse">炼狱难度</button>
         </div>
     </div>
     }
 
 }
 
-export default MainParts;
+export {MainParts};

@@ -1,35 +1,21 @@
-import Game from '@/贪吃蛇/游戏对象';
-window.onload = function () {
-    document.getElementById("easy").onclick = function () {
-        document.getElementById("easy").disabled = true;
-        document.getElementById("common").disabled = true;
-        document.getElementById("hard").disabled = true;
-        //初始化游戏对象
-        var gm = new Game(document.getElementById("Contact"), 150);
+import {Game} from '@/贪吃蛇/游戏对象';
 
-        //开始游戏
-        gm.init();
-    };
+function levelChoice() {
+    let buttonList = document.getElementsByTagName('button');
+    let contactElement = document.getElementById("Contact");
+    let speed = [150, 100, 25];
+    for (let i = 0; i < buttonList.length; i++) {
+        buttonList[i].onclick = function () {
+            for (let j = 0; j < buttonList.length; j++) {
+                buttonList[j].disabled = true;
+            }
+            //初始化游戏对象
+            let gm = new Game(contactElement, speed[i]);
 
-    document.getElementById("common").onclick = function () {
-        document.getElementById("easy").disabled = true;
-        document.getElementById("common").disabled = true;
-        document.getElementById("hard").disabled = true;
-        //初始化游戏对象
-        var gm = new Game(document.getElementById("Contact"), 100);
+            //开始游戏
+            gm.init();
+        };
+    }
+}
 
-        //开始游戏
-        gm.init();
-    };
-
-    document.getElementById("hard").onclick = function () {
-        document.getElementById("easy").disabled = true;
-        document.getElementById("common").disabled = true;
-        document.getElementById("hard").disabled = true;
-        //初始化游戏对象
-        var gm = new Game(document.getElementById("Contact"), 15);
-
-        //开始游戏
-        gm.init();
-    };
-};
+export {levelChoice};

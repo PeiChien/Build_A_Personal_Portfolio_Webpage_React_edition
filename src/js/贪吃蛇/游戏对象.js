@@ -29,7 +29,7 @@ class Game {
             if (headX < 0 || headX >= maxX) {
                 clearInterval(timeId);
                 alert("游戏结束");
-                location.reload();
+                location.reload();//刷新页面
             }
             if (headY < 0 || headY >= maxY) {
                 clearInterval(timeId);

@@ -1,8 +1,8 @@
-import Food from '@/贪吃蛇/食物';
-import Snake from '@/贪吃蛇/小蛇';
+import {Food} from '@/贪吃蛇/食物';
+import {Snake} from '@/贪吃蛇/小蛇';
 let that = null;
 
-export default class Game {
+class Game {
     constructor(map, speed) {
         this.food = new Food();
         this.snake = new Snake();
@@ -58,3 +58,5 @@ export default class Game {
         }.bind(that), false);
     }
 }
+
+export {Game};

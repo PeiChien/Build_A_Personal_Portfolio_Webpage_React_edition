@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 //导入第三方样式表
-//import 'bootstrap/dist/css/bootstrap.min.css';
-//import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 //导入各部分模块
 import {NavBar} from '@/components/NavBar';

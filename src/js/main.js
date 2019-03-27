@@ -6,14 +6,15 @@ import ReactDOM from 'react-dom';
 //import 'font-awesome/css/font-awesome.min.css';
 
 //导入各部分模块
-import NavBar from '@/components/NavBar';
-import MainParts from '@/components/MainParts';
-import MyInfo from '@/components/MyInfo';
-import Footer from '@/components/Footer';
+import {NavBar} from '@/components/NavBar';
+import {MainParts} from '@/components/MainParts';
+import {MyInfo} from '@/components/MyInfo';
+import {Footer} from '@/components/Footer';
 
 //导入js动画文件
-import '@/页面跳转/点击跳转.js';
-import '@/贪吃蛇/难度选择';
+import '@/页面跳转/点击跳转';//采用Jquery实现
+import {levelChoice} from '@/贪吃蛇/难度选择';
+window.onload = levelChoice;
 
 ReactDOM.render(
 <div>

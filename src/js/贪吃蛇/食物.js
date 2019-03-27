@@ -1,7 +1,7 @@
 //用来保存每个小方块食物的
 let elements = [];
 
-export default class Food {
+class Food {
     constructor(x, y, width, height, color) {
         this.x = x || 0;
         this.y = y || 0;
@@ -32,3 +32,5 @@ function remove() {
         elements.splice(i, 1);
     }
 }
+
+export {Food};

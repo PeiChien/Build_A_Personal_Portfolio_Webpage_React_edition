@@ -26,4 +26,4 @@ class MyInfo extends React.Component{
     }
 }
 
-export default MyInfo;
+export {MyInfo};

@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-$(document).ready(function () {
+$(function () {
 
     let fulla = $("#Home").offset().top;
     let fullb = $("#About").offset().top;

@@ -13,8 +13,7 @@ import {Footer} from '@/components/Footer';
 
 //导入js动画文件
 import '@/页面跳转/点击跳转';//采用Jquery实现
-import {levelChoice} from '@/贪吃蛇/难度选择';
-window.onload = levelChoice;
+import '@/贪吃蛇/难度选择';
 
 ReactDOM.render(
 <div>

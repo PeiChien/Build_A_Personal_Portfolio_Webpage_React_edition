@@ -1,6 +1,6 @@
 import {Game} from '@/贪吃蛇/游戏对象';
 
-function levelChoice() {
+window.onload = function () {
     let buttonList = document.getElementsByTagName('button');
     let contactElement = document.getElementById("Contact");
     let speed = [150, 100, 25];
@@ -16,6 +16,4 @@ function levelChoice() {
             gm.init();
         };
     }
-}
-
-export {levelChoice};
+};
